@@ -50,7 +50,10 @@ networks:
 ```
 
   </details>
+  
+ 
 - launch mongo db container
+
 ```shell
 docker run -it -d --name mongo-container -p 27017:27017 --network techbankNet --restart always -v mongodb_data:/data/db mongo:latest
 ```
