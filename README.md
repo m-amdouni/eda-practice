@@ -59,4 +59,13 @@ docker run -it -d --name mysql-container -p 3306:3306 --network techbankNet  -e 
 ```shell
 docker run -it -d --name adminer-container -p 8180:8080 --network techbankNet -e ADMINER_DEFAULT_SERVER=mysql-container --restart always adminer:latest
 ```
-## cqrs project
+## prepare command project
+- initialize a spring boot project with the following dependencies :
+      - spring-web
+      - spring for apache kafka
+      - spring data mongo db
+      - lombok
+ 
+ 
+
+
