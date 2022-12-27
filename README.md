@@ -5,7 +5,10 @@
 ```shell
 docker-compose up -d  with this content to prepare kafka 
 ```
-content of the docker-compose file : 
+<details>
+  
+  <summary> content of the docker-compose file : </summary>
+  
 ```shell
 version: "3.4"
 
@@ -46,6 +49,7 @@ networks:
       name: techbankNet
 ```
 
+  </details>
 - launch mongo db container
 ```shell
 docker run -it -d --name mongo-container -p 27017:27017 --network techbankNet --restart always -v mongodb_data:/data/db mongo:latest
