@@ -80,5 +80,6 @@ docker run -it -d --name adminer-container -p 8180:8080 --network techbankNet -e
       - lombok
       - mysql driver
  
-
+- create cqrs-core and account-common lib project (non spring boot)
+- 
 
