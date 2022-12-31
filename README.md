@@ -80,5 +80,18 @@ docker run -it -d --name adminer-container -p 8180:8080 --network techbankNet -e
       - lombok
       - mysql driver
  
+- create cqrs-core and account-common lib project (non spring boot/ no application class and no application.properties / no build section in maven)
+- create packages for query and command projects :
+        - api
+        - domain
+        - infrastructure 
+- create packages for account-common project 
+        - dto
+        - events
 
+- configure command and query spring boot app : database / kafka producer or consumer / serializer / deserializer 
+- create abstract  Message class and BaseCommand 
+- add dependency cqrs-core & account-common to command & query projects
+- Create Command Objects : extends BaseCommand Object add useful fields for each command Class.
+- 
 
