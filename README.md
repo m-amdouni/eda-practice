@@ -93,5 +93,7 @@ docker run -it -d --name adminer-container -p 8180:8080 --network techbankNet -e
 - create abstract  Message class and BaseCommand 
 - add dependency cqrs-core & account-common to command & query projects
 - Create Command Objects : extends BaseCommand Object add useful fields for each command Class.
-- 
+- Create BaseEvent class
+- Create all Event Classes in account common
+
 
