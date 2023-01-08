@@ -12,13 +12,13 @@ spring:
     password: root
   kafka:
     listener:
-      ack-mode: MANUAL_IMMIDIATE
+      ack-mode: MANUAL_IMMEDIATE
     consumer:
       bootstarp-servers: localhost:9092
       group-id: bankaccConsumer
       auto-offset-reset: earliest
-      key-deserializer: org.apahe.kafka.common.serailization.StringDeserializer
-      value-deserializer: org.springframework.kafka.support.JsonDeserializer
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       properties:
         spring:
           json:
